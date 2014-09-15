@@ -31,15 +31,15 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 
 // MySQL settings - You can get this info from your web host //
 if (WP_ENV == 'development') {
-    define('DB_NAME', 'mydb-dev');
+    define('DB_NAME', 'bbwordpress');
     define('DB_USER', 'root');
-    define('DB_PASSWORD', '');
+    define('DB_PASSWORD', 'Herman826');
     define('DB_HOST', 'localhost');
 } else {
-    define('DB_NAME', 'mydb-prod');
-    define('DB_USER', 'username');
-    define('DB_PASSWORD', 'pasdword');
-    define('DB_HOST', 'mysql.mysite.com');
+    define('DB_NAME', 'blackbm1_bbwordpress');
+    define('DB_USER', 'blackbm1_herm');
+    define('DB_PASSWORD', 'V1deEtin');
+    define('DB_HOST', 'localhost');
 } 
 
 /** Database Charset to use in creating database tables. */
