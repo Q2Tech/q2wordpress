@@ -13,6 +13,14 @@
  *
  * @package WordPress
  */
+ 
+ /** Let's WordPress know that core files are in "wordpress" directory, site served from root of project directory */
+ define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
+define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
+
+/** Let's WordPress know that wp-content are in document root */
+define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
+define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
