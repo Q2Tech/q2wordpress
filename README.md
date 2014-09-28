@@ -21,7 +21,9 @@ function fancyAlert(arg) {
 ```
 
 # Blackbird Consulting WordPress
-This is Blackbird Consulting's base WordPress installation for use on all new projects. This git repository contains two additonal submodules that pull in the most current [WordPress](https://github.com/WordPress/WordPress) installation and [WP-Sync-DB](https://github.com/wp-sync-db/wp-sync-db) a custom plugin that assists with database migration.
+This is [Blackbird Consulting's](www.blackbirdconsult.com) base WordPress installation for use on all new projects. This git repository contains two additonal submodules that pull in the most current [WordPress](https://github.com/WordPress/WordPress) installation and [WP-Sync-DB](https://github.com/wp-sync-db/wp-sync-db) a custom plugin that assists with database migration.
+
 To clone this repository and include the submodules, issue the following git command:
+
 ```git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 ```
