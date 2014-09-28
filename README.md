@@ -20,6 +20,9 @@ function fancyAlert(arg) {
 }
 ```
 
+Apple[edit]
+Apple has a formalised version number structure based around the NumVersion struct, which specifies a one- or two-digit major version, a one-digit minor version, a one-digit "bug" (i.e. revision) version, a stage indicator (drawn from the set development/prealpha, alpha, beta and final/release), and a one-byte (i.e. having values in the range 0–255) pre-release version, which is only used at stages prior to final. In writing these version numbers as strings, the convention is to omit any parts after the minor version whose value are zero (with "final" being considered the zero stage), thus writing 1.0.2 (rather than 1.0.2b12), 1.0.2 (rather than 1.0.2f0), and 1.1 (rather than 1.1.0f0).
+
 # Blackbird Consulting WordPress
 This is [Blackbird Consulting's](www.blackbirdconsult.com) base WordPress installation for use on all new projects. This git repository contains two additonal submodules that pull in the most current [WordPress](https://github.com/WordPress/WordPress) installation and [WP-Sync-DB](https://github.com/wp-sync-db/wp-sync-db), a custom plugin that assists with database migration.
 
@@ -31,3 +34,6 @@ To clone this repository and include the submodules, issue the following git com
 
 ```git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 ```
+#Changelog
+##0.0.1
+-still very much in development mode
