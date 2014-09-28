@@ -31,7 +31,7 @@ if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
 
 // MySQL settings - You can get this info from your web host //
 if (WP_ENV == 'development') {
-    define('DB_NAME', 'rciddev');
+    define('DB_NAME', 'db_name');
     define('DB_USER', 'root');
     define('DB_PASSWORD', 'Herman826');
     define('DB_HOST', 'localhost');
