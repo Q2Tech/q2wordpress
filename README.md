@@ -7,31 +7,34 @@ This WordPress install is set up in a way that places the ```wp-content``` direc
 
 To clone this repository and include the submodules, issue the following git command:
 
-    git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
+    user@computer:~$ git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 
 To use this repository in a new project, first clone this repository into a temporary new bare repository, like this:
 
-    git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
+    user@computer:~$ git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
     # Make a bare clone of the repository
 
 Next, mirror this temporary clone to a new project repository
 
-    cd tempbbwordpress.git
-    git push --mirror https://github.com/exampleuser/new-repository.git
+    user@computer:~$ cd tempbbwordpress.git
+    user@computer:~$ git push --mirror https://github.com/exampleuser/new-repository.git
     # Mirror-push to the temporary clone to a new repository
 
 Remove the temporary clone
 
-    cd ..
-    rm -rf tempbbwordpress.git
+    user@computer:~$ cd ..
+    #move up one level
+    
+    user@computer:~$ rm -rf tempbbwordpress.git
+    #remove temporary repository
 
 Finally, create a new project directory on your development machine and clone the new repository into it:
 
-    mkdir newprojectdirectory
+    user@computer:~$ mkdir newprojectdirectory
     # Create a new directory for your project
-    cd newprojectdirectory
+    user@computer:~$ cd newprojectdirectory
     # Enter the newly created directory
-    git clone --recursive https://github.com/exampleuser/new-repository.git
+    user@computer:~$ git clone --recursive https://github.com/exampleuser/new-repository.git
     # Remember to use recursive to include all submodules
 
 #Changelog
