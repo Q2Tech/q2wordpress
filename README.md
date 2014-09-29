@@ -24,7 +24,7 @@ Remove the temporary clone
 
     user@computer:~$ cd ..
     #move up one level
-    
+
     user@computer:~$ rm -rf tempbbwordpress.git
     #remove temporary repository
 
@@ -32,8 +32,10 @@ Finally, create a new project directory on your development machine and clone th
 
     user@computer:~$ mkdir newprojectdirectory
     # Create a new directory for your project
+
     user@computer:~$ cd newprojectdirectory
     # Enter the newly created directory
+
     user@computer:~$ git clone --recursive https://github.com/exampleuser/new-repository.git
     # Remember to use recursive to include all submodules
 
