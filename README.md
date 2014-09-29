@@ -9,6 +9,8 @@ To clone this repository and include the submodules, issue the following git com
 
 ```git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 ```
+===CHANGELOG===
+
 #Changelog
 Apple has a formalised version number structure based around the NumVersion struct, which specifies a one- or two-digit major version, a one-digit minor version, a one-digit "bug" (i.e. revision) version,
 ##0.0.1
