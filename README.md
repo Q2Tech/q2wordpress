@@ -16,27 +16,29 @@ To use this repository in a new project, first clone this repository into a temp
 
 Next, mirror this temporary clone to a new project repository
 
-    user@computer:~$ cd tempbbwordpress.git
-    user@computer:~$ git push --mirror https://github.com/exampleuser/new-repository.git
-    # Mirror-push to the temporary clone to a new repository
+    blackbird@computer:~$ cd tempbbwordpress.git
+    #Enter temporary project repository directory
+        
+    blackbird@computer:~$ git push --mirror https://github.com/exampleuser/new-repository.git
+    # Mirror-push the temporary clone to a new repository
 
 Remove the temporary clone
 
     user@computer:~$ cd ..
     #move up one level
 
-    user@computer:~$ rm -rf tempbbwordpress.git
+    blackbird@computer:~$ rm -rf tempbbwordpress.git
     #remove temporary repository
 
 Finally, create a new project directory on your development machine and clone the new repository into it:
 
-    user@computer:~$ mkdir newprojectdirectory
+    blackbird@computer:~$ mkdir newprojectdirectory
     # Create a new directory for your project
 
-    user@computer:~$ cd newprojectdirectory
+    blackbird@computer:~$ cd newprojectdirectory
     # Enter the newly created directory
 
-    user@computer:~$ git clone --recursive https://github.com/exampleuser/new-repository.git
+    blackbird@computer:~$ git clone --recursive https://github.com/exampleuser/new-repository.git
     # Remember to use recursive to include all submodules
 
 #Changelog
