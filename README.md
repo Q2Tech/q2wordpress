@@ -12,8 +12,8 @@ To clone this repository and include the submodules, issue the following git com
 To use this repository in a new project, first clone this repository into a temporary new bare repository, like this:
 
 ```git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
-# Make a bare clone of the repository
-```
+# Make a bare clone of the repository```
+
 Next, mirror this temporary clone to a new project repository
 
 ```cd tempbbwordpress.git
