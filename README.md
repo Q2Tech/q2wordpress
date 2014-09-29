@@ -9,21 +9,25 @@ To clone this repository and include the submodules, issue the following git com
 
 ```git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 ```
+
 To use this repository in a new project, first clone this repository into a temporary new bare repository, like this:
 
 ```git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
-# Make a bare clone of the repository```
+# Make a bare clone of the repository
+```
 
 Next, mirror this temporary clone to a new project repository
 
 ```cd tempbbwordpress.git
 git push --mirror https://github.com/exampleuser/new-repository.git
-# Mirror-push to the temporary clone to a new repository```
+# Mirror-push to the temporary clone to a new repository
+```
 
 Remove the temporary clone
 
 ```cd ..
-rm -rf tempbbwordpress.git```
+rm -rf tempbbwordpress.git
+```
 
 Finally, create a new project directory on your development machine and clone the new repository into it:
 
@@ -32,7 +36,8 @@ Finally, create a new project directory on your development machine and clone th
 cd newprojectdirectory
 # Enter the newly created directory
 git clone --recursive https://github.com/exampleuser/new-repository.git
-# Remember to use recursive to include all submodules```
+# Remember to use recursive to include all submodules
+```
 
 #Changelog
 Apple has a formalised version number structure based around the NumVersion struct, which specifies a one- or two-digit major version, a one-digit minor version, a one-digit "bug" (i.e. revision) version,
