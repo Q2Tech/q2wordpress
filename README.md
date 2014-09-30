@@ -21,6 +21,8 @@ This block has been changed, because it now resides outside the primary wordpres
 
 The basic WordPress install ```wp-config.php``` has been altered, too. Because we have moved both ```index.php``` and the ```wp-content``` folder outside the ```wordpress``` core installation, we must reference this change in ```wp-config.php```, which lets WordPress know where the core files are stored and that ```wp-content``` is located in the root directory. The following block has been added just below the opening comment block, just above the database credentials block:
 
+####Tell WordPress where to go
+
     /** Let's WordPress know that core files are in "wordpress" directory, site served from root of project directory */
     define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
     define('WP_HOME',    'http://' . $_SERVER['SERVER_NAME']);
@@ -29,6 +31,8 @@ The basic WordPress install ```wp-config.php``` has been altered, too. Because w
     define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
     
+####Tale of two databases
+
 The standard ```wp-config.php``` file contains the following block, which holds the database credentials:
 
     // ** MySQL settings - You can get this info from your web host ** //
