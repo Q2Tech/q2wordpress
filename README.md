@@ -5,16 +5,18 @@ This is [Blackbird Consulting's](www.blackbirdconsult.com) base WordPress instal
 
 This WordPress install is set up in a way that places the ```wp-content``` directory *outside* the main ```wordpress``` directory. This setup also places the ```index.php``` and ```wp-config.php``` files outside the ```wordpress``` directory. Thes files have been edited appropriately. This setup is oriented to be developed locally but pushed periodically to a staging environment. Thus, the ```wp-config.php``` has also been customized to allow enable inputting two sets of database credentials, one for your local development environment and one for the staging environment. 
 
-To clone this repository and include the submodules, issue the following git command:
+###To clone this repository and include the submodules
+**Issue the following git command:*
 
-    user@computer:~$ git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
+    blackbird@computer:~$ git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 
-To use this repository in a new project, first clone this repository into a temporary new bare repository, like this:
+###To use this repository in a new project
+**first clone this repository into a temporary new bare repository, like this:**
 
-    user@computer:~$ git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
+    blackbird@computer:~$ git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
     # Make a bare clone of the repository
 
-Next, mirror this temporary clone to a new project repository
+**next, mirror this temporary clone to a new repository**
 
     blackbird@computer:~$ cd tempbbwordpress.git
     #Enter temporary project repository directory
@@ -22,7 +24,7 @@ Next, mirror this temporary clone to a new project repository
     blackbird@computer:~$ git push --mirror https://github.com/exampleuser/new-repository.git
     # Mirror-push the temporary clone to a new repository
 
-Remove the temporary clone
+**next, remove the temporary clone repository**
 
     user@computer:~$ cd ..
     #move up one level
@@ -30,7 +32,7 @@ Remove the temporary clone
     blackbird@computer:~$ rm -rf tempbbwordpress.git
     #remove temporary repository
 
-Finally, create a new project directory on your development machine and clone the new repository into it:
+**Finally, create a new project directory on your development machine and clone the new repository into it:**
 
     blackbird@computer:~$ mkdir newprojectdirectory
     # Create a new directory for your project
