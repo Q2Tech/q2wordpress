@@ -31,7 +31,7 @@ The basic WordPress install ```wp-config.php``` has been altered, too. Because w
     define('WP_CONTENT_DIR', $_SERVER['DOCUMENT_ROOT'] . '/wp-content');
     define('WP_CONTENT_URL', 'http://' . $_SERVER['SERVER_NAME'] . '/wp-content');
     
-####Tale of two databases
+####Tale of one database - the original ```wp-config.php``` file
 
 The standard ```wp-config.php``` file contains the following block, which holds the database credentials:
 
@@ -49,7 +49,30 @@ The standard ```wp-config.php``` file contains the following block, which holds 
     /** MySQL hostname */
     define( 'DB_HOST', 'localhost' );
     
+
+####Tale of two databases
+
 The ```wp-config.php``` file in this repository has been changed enable two databases, one in the local development environment and one in the online staging environment. this file should be changed to the original once the staging environment is pushed as a live site.
+
+    // ** MySQL settings - You can get this info from your web host ** //
+    if ($_SERVER['REMOTE_ADDR']=='127.0.0.1') {
+        define('WP_ENV', 'development');
+    } else {
+        define('WP_ENV', 'production');
+    }
+
+    // MySQL settings - You can get this info from your web host //
+    if (WP_ENV == 'development') {
+        define('DB_NAME', 'development_db_name');
+        define('DB_USER', 'root');
+        define('DB_PASSWORD', 'development_db_password');
+        define('DB_HOST', 'localhost');
+    } else {
+        define('DB_NAME', 'staging_db_name');
+        define('DB_USER', 'root');
+        define('DB_PASSWORD', 'staging_db_password');
+        define('DB_HOST', 'localhost');
+    } 
 
 ##Cloning and Mirroring
 
