@@ -6,7 +6,7 @@ This is [Blackbird Consulting's](www.blackbirdconsult.com) base WordPress instal
 This WordPress install is set up in a way that places the ```wp-content``` directory *outside* the main ```wordpress``` directory. This setup also places the ```index.php``` and ```wp-config.php``` files outside the ```wordpress``` directory. Thes files have been edited appropriately. This setup is oriented to be developed locally but pushed periodically to a staging environment. Thus, the ```wp-config.php``` has also been customized to allow enable inputting two sets of database credentials, one for your local development environment and one for the staging environment. 
 
 ###To clone this repository and include the submodules
-**Issue the following git command:*
+**Issue the following git command:**
 
     blackbird@computer:~$ git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 
