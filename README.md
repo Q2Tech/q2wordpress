@@ -46,4 +46,4 @@ This WordPress install is set up in a way that places the ```wp-content``` direc
 #Changelog
 Apple has a formalised version number structure based around the NumVersion struct, which specifies a one- or two-digit major version, a one-digit minor version, a one-digit "bug" (i.e. revision) version,
 ##0.0.1
--still very much in development mode
+- still very much in development mode
