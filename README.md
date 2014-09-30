@@ -17,7 +17,7 @@ This block has been changed, because it now resides outside the primary wordpres
     /** Loads the WordPress Environment and Template */
     require( dirname( __FILE__ ) . '/wordpress/wp-blog-header.php' );
     
-The basic WordPress install ```wp-config.php``` has been altered, too. Because we have moved both ```index.php``` and the ```wp-content`` folder outside the ```wordpress``` core installation, we must reference this change in ```wp-config.php```, which lets WordPress know where the core files are stored and that ```wp-content``` is located in the root directory. The following block has been added just below the opening comment block, just above the database credentials block:
+The basic WordPress install ```wp-config.php``` has been altered, too. Because we have moved both ```index.php``` and the ```wp-content``` folder outside the ```wordpress``` core installation, we must reference this change in ```wp-config.php```, which lets WordPress know where the core files are stored and that ```wp-content``` is located in the root directory. The following block has been added just below the opening comment block, just above the database credentials block:
 
     /** Let's WordPress know that core files are in "wordpress" directory, site served from root of project directory */
     define('WP_SITEURL', 'http://' . $_SERVER['SERVER_NAME'] . '/wordpress');
@@ -43,7 +43,7 @@ The standard ```wp-config.php``` file contains the following block, which holds 
     /** MySQL hostname */
     define( 'DB_HOST', 'localhost' );
     
-The ```wp-config.php`` file in this repository has been changed enable two databases, one in the local development environment and one in the online staging environment. this file should be changed to the original once the staging environment is pushed as a live site.
+The ```wp-config.php``` file in this repository has been changed enable two databases, one in the local development environment and one in the online staging environment. this file should be changed to the original once the staging environment is pushed as a live site.
 
 
 
