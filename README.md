@@ -8,39 +8,39 @@ This WordPress install is set up in a way that places the ```wp-content``` direc
 ###To clone this repository and include the submodules
 **Issue the following git command:**
 
-    blackbird@computer:~$ git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
+    blackbird@computer:~/htdocs$ git clone --recursive git@github.com:Herm71/bbwordpress.git yournewprojectdirectory
 
 ###To use this repository in a new project
-**first clone this repository into a temporary new bare repository, like this:**
+**first clone this repository into a temporary new bare repository on your local machine, like this:**
 
-    blackbird@computer:~$ git clone --bare --recursive git@github.com:Herm71/bbwordpress.git /path/to/tempbbwordpress.git
+    blackbird@computer:~/htdocs$ git clone --bare --recursive git@github.com:Herm71/bbwordpress.git tempbbwordpress.git
     # Make a bare clone of the repository
 
-**next, mirror this temporary clone to a new repository**
+**next, mirror this temporary clone to a new repository on your server**
 
-    blackbird@computer:~$ cd tempbbwordpress.git
-    #Enter temporary project repository directory
+    blackbird@computer:~/htdocs$ cd tempbbwordpress.git
+    #Enter temporary local repository directory
         
-    blackbird@computer:~$ git push --mirror https://github.com/exampleuser/new-repository.git
+    blackbird@computer:~/htdocs/tempbbwordpress.git$ git push --mirror https://github.com/exampleuser/new-repository.git
     # Mirror-push the temporary clone to a new repository
 
 **next, remove the temporary clone repository**
 
-    user@computer:~$ cd ..
+    blackbird@computer:~/htdocs/tempbbwordpress.git$ cd ..
     #move up one level
 
-    blackbird@computer:~$ rm -rf tempbbwordpress.git
+    blackbird@computer:~/htdocs$ rm -rf tempbbwordpress.git
     #remove temporary repository
 
 **Finally, create a new project directory on your development machine and clone the new repository into it:**
 
-    blackbird@computer:~$ mkdir newprojectdirectory
+    blackbird@computer:~/htdocs$ mkdir newprojectdirectory
     # Create a new directory for your project
 
-    blackbird@computer:~$ cd newprojectdirectory
+    blackbird@computer:~/htdocs$ cd newprojectdirectory
     # Enter the newly created directory
 
-    blackbird@computer:~$ git clone --recursive https://github.com/exampleuser/new-repository.git
+    blackbird@computer:~/htdocs/newprojectdirectory$ git clone --recursive https://github.com/exampleuser/new-repository.git
     # Remember to use recursive to include all submodules
 
 #Changelog
